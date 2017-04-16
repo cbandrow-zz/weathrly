@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Cinzel:700');
 
 *{
   font-family: "Roboto Slab", serif;
@@ -10,10 +10,28 @@ body {
   width: 100%;
 }
 
+h1{
+  font-family: "Cinzel";
+  font-size: 45px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 28px;
+}
+
 #main-title{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5px;
+}
+
+#sub-title{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
 }
 
 #weather-container{
@@ -22,18 +40,63 @@ body {
 }
 #input-container{
   text-align: center;
-  width: 100%;
+  width: 75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 25px;
+
+  border-bottom-style: double;
+  border-width: 5px;
+  border-color: #999;
 }
 
 #summary-container{
+  display: block;
+  text-align: center;
+  width: 100%;
+}
 
+#summary-img{
+  display: inline-block
+}
+
+#summary-img img{
+  width: 80px;
+}
+
+#summary-content{
+  align-items: center;
+  text-align: left;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#summary-content p{
+  display: block;
+}
+
+#current-temp{
+  font-size: 24px;
 }
 
 #hourly-container{
+  background-color: #dddddd;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
 
+.hourly-detail {
+  display: inline-block;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.hour-temp{
+  font-size: 18px;
+  font-weight: 700;
 }
 
 #tenday-container{
@@ -50,10 +113,17 @@ body {
   font-size: 18px;
   text-align: center;
   width: 450px;
+}
 
+#location-enter:focus{
+  background-color: #eae8d7;
+  outline: none;
 }
 
 #submit-btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-style: solid;
   border-color: #999999;
   border-width: 2px;
@@ -64,5 +134,12 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   color: #555555;
+}
 
+#submit-btn:hover{
+  background-color: #eae8d7;
+}
+
+#submit-btn:focus{
+  outline: none;
 }
