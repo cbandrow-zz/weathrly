@@ -8,6 +8,7 @@
 
 body {
   width: 100%;
+  margin: 0;
 }
 
 h1{
@@ -17,7 +18,16 @@ h1{
 }
 
 h2{
+  margin-top: 40px;
   font-size: 28px;
+}
+
+h4{
+  margin-bottom: 10px;
+}
+
+.backgrounds{
+  background-color: #cdcdcd;
 }
 
 #main-title{
@@ -45,7 +55,6 @@ h2{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 25px;
-
   border-bottom-style: double;
   border-width: 5px;
   border-color: #999;
@@ -55,6 +64,7 @@ h2{
   display: block;
   text-align: center;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 #summary-img{
@@ -81,7 +91,7 @@ h2{
 }
 
 #hourly-container{
-  background-color: #dddddd;
+  background-color: #000000;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -95,16 +105,58 @@ h2{
 }
 
 .hour-temp{
+  display: inline-block;
   font-size: 18px;
   font-weight: 700;
 }
 
+.hour-condition{
+  margin-top: 3px;
+}
+
 .hourly-img{
+  vertical-align: middle;
+  display: inline-block;
   width: 50px;
+  margin-right: 5px;
 }
 
 #tenday-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
+#ten-day-container h3{
+  display: inline-block;
+}
+
+.ten-img{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ten-day-item{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.ten-text{
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#high{
+  color: #9b1203;
+}
+
+#low{
+  color: #035899;
 }
 
 #location-enter{
