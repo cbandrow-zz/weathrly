@@ -2,11 +2,11 @@
 
 *{
   font-family: "Roboto Slab", serif;
-  background-color: #ededed;
   box-sizing: border-box;
 }
 
 body {
+  background-color: #ededed;
   width: 100%;
   margin: 0;
 }
@@ -72,6 +72,7 @@ h4{
 }
 
 #summary-img img{
+  vertical-align: baseline;
   width: 80px;
 }
 
@@ -87,15 +88,14 @@ h4{
 }
 
 #current-temp{
+  margin-top: 12px;
   font-size: 24px;
 }
 
 #hourly-container{
-  background-color: #000000;
+  background-color: #dddddd;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
+  width: 100%;
 }
 
 .hourly-detail {
@@ -122,33 +122,50 @@ h4{
 }
 
 #tenday-container{
-  display: flex;
+  display: block;
   flex-direction: column;
   text-align: center;
 }
 
-#ten-day-container h3{
-  display: inline-block;
+.ten-date, .ten-img-cont, .ten-summary, .ten-text{
+  vertical-align: middle;
+  /*margin-top: 40px;
+  margin-bottom: 40px;*/
 }
 
 .ten-img{
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
+  width: 60px;
 }
 
 .ten-day-item{
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
+  width: 75%;
+  border-bottom-width: 1px;
+  border-bottom-style: groove;
+}
+
+.ten-date{
+  margin-right: 20px;
+  width: 200px;
+  display: inline-block;
+}
+
+.ten-img-cont{
+  width: 100px;
+  display: inline-block;
+}
+
+.ten-summary{
+  display: inline-block;
+  width: 200px;
 }
 
 .ten-text{
   font-size: 20px;
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 #high{
