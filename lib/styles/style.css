@@ -7,6 +7,8 @@
 
 body {
   background-color: #ededed;
+  background-image: url("newspapertexture.jpg");
+  background-repeat: repeat;
   width: 100%;
   margin: 0;
 }
@@ -23,12 +25,8 @@ h2{
 }
 
 h4{
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.backgrounds{
-  background-color: #cdcdcd;
+  font-size: 24px;
+  margin-bottom: 2px;
 }
 
 #main-title{
@@ -48,6 +46,7 @@ h4{
 
 #weather-container{
   width: 100%;
+  background-color: rgba(221, 221, 221, 0.3);
 
 }
 #input-container{
@@ -65,8 +64,13 @@ h4{
 #summary-container{
   display: block;
   text-align: center;
-  width: 100%;
+  width: 97%;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-style: double;
+  border-width: 5px;
+  border-color: #999;
 }
 
 #summary-img{
@@ -78,12 +82,35 @@ h4{
   width: 80px;
 }
 
+#status{
+  font-size: 22px;
+}
+
 #summary-content{
   align-items: center;
   text-align: left;
   display: inline-block;
   margin-left: 20px;
+}
 
+#weather-summary{
+  display: block;
+  font-size: 22px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 350px;
+  max-width: 600px;
+  background-color: rgba(221, 221, 221, 0.3);
+}
+
+#weather-summary p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#weather-summary p:last-child{
+  margin-bottom: 20px;
 }
 
 #summary-content p{
@@ -97,15 +124,23 @@ h4{
 }
 
 #hourly-container{
-  background-color: #dddddd;
   text-align: center;
-  width: 100%;
+  width: 97%;
+  border-bottom-style: double;
+  border-width: 5px;
+  border-color: #999;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hourly-detail {
   display: inline-block;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 125px;
+  height: 200px;
+  border-bottom-width: 1px;
+  border-bottom-style: groove;
 }
 
 .hour-temp{
@@ -127,6 +162,7 @@ h4{
 }
 
 #tenday-container{
+  background-color: rgba(221, 221, 221, 0.45);
   display: block;
   flex-direction: column;
   text-align: center;
@@ -134,8 +170,6 @@ h4{
 
 .ten-date, .ten-img-cont, .ten-summary, .ten-text{
   vertical-align: middle;
-  /*margin-top: 40px;
-  margin-bottom: 40px;*/
 }
 
 .ten-img{
@@ -155,6 +189,7 @@ h4{
 .ten-date{
   width: 200px;
   display: inline-block;
+  font-size: 18px;
 }
 
 .ten-img-cont{
@@ -247,6 +282,15 @@ h4{
 
   #submit-btn{
     font-size: 20px;
+  }
+
+  #weather-summary{
+    font-size: 18px;
+    width: 300px;
+  }
+
+  #status{
+    font-size: 18px;
   }
 
   .ten-day-item{
